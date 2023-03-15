@@ -1,0 +1,24 @@
+.header-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    background: #304fff;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("slide-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+@media (max-width: 720px) {
+    .header-bg {
+        height: 202px;
+    }
+}
