@@ -93,3 +93,42 @@
     position: absolute;
     right: 0;
 }
+.about-me-description__container{
+    width: 100%;
+    padding: 25px;
+    position: relative;
+    background: #fefefe;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.row{
+    display: flex;
+    column-gap: 20px;
+}
+.fb-40{
+    flex-basis: 40%;
+}
+.fb-60{
+    flex-basis: 60%;
+}
+.text-box{
+    row-gap: 10px;
+}
+.text-box p{
+    line-height: 25px;
+}
+.text-box p:first-child{
+    font-weight: 500;
+    color: #363636;
+    font-size: 16px;
+}
+.flex-column,.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.bts{
+    display: flex;
+    column-gap: 20px;
+}

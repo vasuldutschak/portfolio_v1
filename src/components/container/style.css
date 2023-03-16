@@ -11,4 +11,8 @@
     .container {
         margin: 124px auto 0;
     }
+    .about-me-description__container .row{
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }

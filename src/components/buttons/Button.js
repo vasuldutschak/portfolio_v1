@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
-
-function SocialLink({type,linkTo,children}) {
+import './style.css'
+function Button({blue,onClick,children,...otherProps}) {
     const linkRef = useRef(null)
     function handleMouseEnter(event){
         const ink = event.target.querySelector('.ink')
@@ -18,14 +18,15 @@ function SocialLink({type,linkTo,children}) {
         }
     },[])
 
-
+    const getClassNames=()=>{
+        return `btn ${blue ? 'btn-blue' : ''}`
+    }
     return (
-        <a href={linkTo} className='user-link' ref={linkRef}>
+        <a className={getClassNames()} onClick={onClick} {...otherProps} ref={linkRef}>
             <div className='ink'></div>
-            <i className={type}></i>
             {children}
         </a>
     );
 }
 
-export default SocialLink;
+export default Button;

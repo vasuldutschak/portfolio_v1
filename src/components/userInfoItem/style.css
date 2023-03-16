@@ -1,0 +1,26 @@
+.info-item{
+    display: flex;
+    padding: 14px 14px 14px 0;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    color: #363636;
+    font-weight: 400;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.info-item strong{
+    display: block;
+    min-width: 90px;
+
+}
+.info-item strong span{
+    padding: 2px 5px;
+    background: #304fff;
+    color: #fefefe;
+    font-weight: 400;
+    border-radius: 2px;
+}
+.info-item div a{
+    text-decoration: none;
+    color: inherit;
+}

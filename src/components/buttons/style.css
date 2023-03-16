@@ -1,0 +1,13 @@
+.btn{
+    line-height: 42px;
+    padding: 0 30px;
+    color: var(--item-title-color);
+    font-size: 14px;
+    background: var(--btn-bg);
+    position: relative;
+    overflow: hidden;
+}
+.btn-blue{
+    background: var(--bg-item);
+    color: var(--btn-color);
+}
