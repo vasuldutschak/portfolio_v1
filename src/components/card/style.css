@@ -1,0 +1,32 @@
+.card{
+    padding: 25px;
+    background: var(--btn-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.card-icon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    border-radius: 50%;
+    background: var(--bg-item);
+    color: var(--btn-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.card-title{
+    align-self: center;
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--item-title-color);
+}

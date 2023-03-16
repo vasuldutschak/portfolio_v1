@@ -111,6 +111,9 @@
 .fb-60{
     flex-basis: 60%;
 }
+.fb-50{
+    flex-basis: 50%;
+}
 .text-box{
     row-gap: 10px;
 }

@@ -1,0 +1,39 @@
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.skills-item__title {
+    font-size: 14px;
+    color: var(--item-title-color);
+}
+
+.skills-item__progress {
+    width: 100%;
+    background: var(--bg-skills);
+    height: 8px;
+    border-radius: 2px;
+}
+
+.skills-item__percentage {
+    background: var(--bg-item);
+    height: 100%;
+    position: relative;
+}
+.skills-item__icon{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(50%,-50%);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--bg-item);
+    color: var(--btn-color);
+    font-size: 15px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

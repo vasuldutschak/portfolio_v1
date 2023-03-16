@@ -1,9 +1,9 @@
 import React, {useEffect, useRef} from 'react';
-import img from "../../man.png";
+import img from "../../../man.png";
 import './style.css'
-import SocialLink from "../sotialLink/SocialLink";
-import UserInfoItem from "../userInfoItem/UserInfoItem";
-import Button from "../buttons/Button";
+import SocialLink from "../../sotialLink/SocialLink";
+import UserInfoItem from "../../userInfoItem/UserInfoItem";
+import Button from "../../buttons/Button";
 
 function AboutUserSection(props) {
     return (<section className='about-me'>

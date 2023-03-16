@@ -1,0 +1,8 @@
+.skills__container .row{
+    column-gap: 20px;
+}
+.skills-item__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
