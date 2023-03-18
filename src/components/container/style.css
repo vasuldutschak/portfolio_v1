@@ -22,4 +22,14 @@
         flex-direction: column;
         row-gap: 50px;
     }
+
+    .experience-timeline.row {
+        margin-top: 0;
+    }
+    .experience-timeline{
+        padding-left: 72px;
+    }
+    .experience-card:before{
+        display: none;
+    }
 }
