@@ -11,6 +11,7 @@ import ClientsSection from "./components/sections/clients/ClientsSection";
 import PricingSection from "./components/sections/pricing/PricingSection";
 import BlogSection from "./components/sections/blog/BlogSection";
 import TextSection from "./components/sections/text/TextSection";
+import ContactSection from "./components/sections/contact/ContactSection";
 function App() {
     return (
         <div className="App">
@@ -25,6 +26,7 @@ function App() {
                 <PricingSection/>
                 <BlogSection/>
                 <TextSection/>
+                <ContactSection/>
             </Container>
         </div>
     );

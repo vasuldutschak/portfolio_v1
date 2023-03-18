@@ -19,6 +19,7 @@ a{
     --btn-bg:#efefef;
     --title-color:#727272;
     --bg-skills:#e4e4e4;
+    --input-color:#868686;
 }
 body{
     background: var(--bg-body);
