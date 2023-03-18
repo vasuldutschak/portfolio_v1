@@ -1,0 +1,30 @@
+.slider-container{
+    overflow: hidden;
+    padding-top: 35px;
+}
+.card{
+    width: inherit;
+}
+.swiper-wrapper{
+    display: flex;
+}
+.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: #363636;
+    cursor: pointer;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: var(--bg-item);
+    opacity: 1;
+}

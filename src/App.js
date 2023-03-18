@@ -7,6 +7,7 @@ import SkillsSection from "./components/sections/sklills/SkillsSection";
 import ExperienceSection from "./components/sections/experience/ExperienceSection";
 import ServicesSection from "./components/sections/services/ServicesSection";
 import EducationSection from "./components/sections/education/EducationSection";
+import ClientsSection from "./components/sections/clients/ClientsSection";
 function App() {
     return (
         <div className="App">
@@ -17,6 +18,7 @@ function App() {
                 <ExperienceSection/>
                 <ServicesSection/>
                 <EducationSection/>
+                <ClientsSection/>
             </Container>
         </div>
     );

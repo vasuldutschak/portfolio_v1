@@ -6,7 +6,7 @@
     flex-direction: column;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
-.card-icon{
+.card-icon,.card-image{
     position: absolute;
     top: 0;
     left: 50%;
@@ -23,10 +23,22 @@
     align-items: center;
     font-size: 30px;
 }
+.card-image{
+    width: 100px;
+    height: 100px;
+}
+.card-image img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
 .card-title{
     align-self: center;
     margin: 20px 0;
     font-weight: 400;
     font-size: 17px;
     color: var(--item-title-color);
+}
+.italic{
+    font-style: italic;
 }
