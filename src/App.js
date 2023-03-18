@@ -12,9 +12,11 @@ import PricingSection from "./components/sections/pricing/PricingSection";
 import BlogSection from "./components/sections/blog/BlogSection";
 import TextSection from "./components/sections/text/TextSection";
 import ContactSection from "./components/sections/contact/ContactSection";
+import Navbar from "./components/navbar/Navbar";
 function App() {
     return (
         <div className="App">
+            <Navbar/>
             <HeaderBackGround/>
             <Container>
                 <AboutUserSection/>
