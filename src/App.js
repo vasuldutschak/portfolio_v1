@@ -9,6 +9,7 @@ import ServicesSection from "./components/sections/services/ServicesSection";
 import EducationSection from "./components/sections/education/EducationSection";
 import ClientsSection from "./components/sections/clients/ClientsSection";
 import PricingSection from "./components/sections/pricing/PricingSection";
+import BlogSection from "./components/sections/blog/BlogSection";
 function App() {
     return (
         <div className="App">
@@ -21,6 +22,7 @@ function App() {
                 <EducationSection/>
                 <ClientsSection/>
                 <PricingSection/>
+                <BlogSection/>
             </Container>
         </div>
     );
