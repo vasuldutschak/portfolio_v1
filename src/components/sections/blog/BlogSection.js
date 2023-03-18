@@ -10,7 +10,7 @@ function BlogSection(props) {
     return (
         <section className='blog'>
             <div className="blog__container">
-                <div className='section-title'>Pricing</div>
+                <div className='section-title'>Blog</div>
                 <div className="blog-card-container">
                     <BlogCard img={img1} hasTags={['#branding', '#ui-ux']} title='Music Player Design' text={text} date={{day:27,dayName:"July"}}>
                     </BlogCard>
