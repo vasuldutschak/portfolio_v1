@@ -1,0 +1,46 @@
+.pricing-card-container{
+    display: grid;
+    grid-template: repeat(1,1fr)/repeat(4,1fr);
+    column-gap: 20px;
+}
+.pricing-card-feature-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 8px 0;
+    font-size: 16px;
+    color: var(--item-title-color);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.pricing-card-feature-list >.disable{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.pricing-card-feature-list li strong {
+    margin: 0 0 0 5px;
+    padding: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #363636;
+    font-weight: 300;
+    background: #efefef;
+    border-radius: 2px;
+}
+@media (max-width: 1150px) {
+    .pricing-card-container{
+        display: grid;
+        grid-template: repeat(2,1fr)/repeat(2,1fr);
+        column-gap: 20px;
+        row-gap: 50px;
+    }
+}
+@media (max-width: 720px) {
+    .pricing-card-container{
+        display: grid;
+        grid-template: repeat(4,1fr)/repeat(1,1fr);
+        column-gap: 20px;
+        row-gap: 50px;
+    }
+}

@@ -6,6 +6,10 @@
     background: var(--btn-bg);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
 }
 .btn-blue{
     background: var(--bg-item);

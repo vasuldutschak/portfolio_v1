@@ -1,0 +1,32 @@
+.pricing-card{
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+}
+.pricing-card-amount{
+    margin: 35px 0;
+    display: flex;
+}
+.pricing-card-amount .amount{
+    margin: 0 3px;
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    color: var(--item-title-color);
+    align-self: center;
+}
+.pricing-card-amount .dollar{
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 300;
+}
+.pricing-card-amount .period{
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 300;
+}
+.pricing-card-title{
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--item-title-color);
+}
