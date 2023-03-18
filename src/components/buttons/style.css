@@ -15,3 +15,7 @@
     background: var(--bg-item);
     color: var(--btn-color);
 }
+.btn .ink{
+    width: 10px;
+    height: 10px;
+}

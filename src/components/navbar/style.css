@@ -22,6 +22,11 @@ header{
     color: var(--btn-color);
     font-size: 16px;
     font-weight: 400;
+    height: 100%;
+}
+.top-menu ul li a.user-link .ink{
+    width: 20px;
+    height: 20px;
 }
 .top-menu ul li a.user-link.active{
     background: var(--item-active);
