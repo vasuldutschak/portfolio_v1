@@ -1,0 +1,14 @@
+.service-card__container{
+    display: grid;
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+    column-gap: 24px;
+    row-gap: 50px;
+}
+@media (max-width: 720px) {
+    .service-card__container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+

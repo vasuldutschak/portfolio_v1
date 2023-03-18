@@ -5,6 +5,8 @@ import React from "react";
 import AboutUserSection from "./components/sections/aboutUserSection/AboutUserSection";
 import SkillsSection from "./components/sections/sklills/SkillsSection";
 import ExperienceSection from "./components/sections/experience/ExperienceSection";
+import ServicesSection from "./components/sections/services/ServicesSection";
+import EducationSection from "./components/sections/education/EducationSection";
 function App() {
     return (
         <div className="App">
@@ -13,6 +15,8 @@ function App() {
                 <AboutUserSection/>
                 <SkillsSection/>
                 <ExperienceSection/>
+                <ServicesSection/>
+                <EducationSection/>
             </Container>
         </div>
     );

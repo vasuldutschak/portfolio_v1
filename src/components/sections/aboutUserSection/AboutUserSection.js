@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import img from "../../../man.png";
 import './style.css'
 import SocialLink from "../../sotialLink/SocialLink";
