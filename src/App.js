@@ -10,6 +10,7 @@ import EducationSection from "./components/sections/education/EducationSection";
 import ClientsSection from "./components/sections/clients/ClientsSection";
 import PricingSection from "./components/sections/pricing/PricingSection";
 import BlogSection from "./components/sections/blog/BlogSection";
+import TextSection from "./components/sections/text/TextSection";
 function App() {
     return (
         <div className="App">
@@ -23,6 +24,7 @@ function App() {
                 <ClientsSection/>
                 <PricingSection/>
                 <BlogSection/>
+                <TextSection/>
             </Container>
         </div>
     );
