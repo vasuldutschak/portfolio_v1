@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 
-function SocialLink({type,linkTo,children}) {
+function SocialLink({type,linkTo,children,onClick,filterType}) {
     const linkRef = useRef(null)
     function handleMouseEnter(event){
         const ink = event.target.querySelector('.ink')
@@ -20,7 +20,9 @@ function SocialLink({type,linkTo,children}) {
 
 
     return (
-        <a href={linkTo} className='user-link' ref={linkRef}>
+        <a href={linkTo} className='user-link' ref={linkRef} onClick={(event)=>{
+            onClick(event,filterType)
+        }}>
             <div className='ink'></div>
             <i className={type}></i>
             {children}

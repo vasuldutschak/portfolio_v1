@@ -5,7 +5,7 @@ import SkillsItem from "../../skillsItem/SkillsItem";
 
 function SkillsSection(props) {
     return (
-        <section className='skills'>
+        <section className='skills' id='skills'>
             <div className="skills__container">
                 <div className='section-title'>Skills</div>
                 <div className="row">

@@ -21,6 +21,7 @@ a{
     --bg-skills:#e4e4e4;
     --input-color:#868686;
     --item-active:#263fcc;
+    --border-item:#abb8fe;
 }
 body{
     background: var(--bg-body);
@@ -39,4 +40,5 @@ body{
     font-weight: lighter;
     text-align: center;
     margin-bottom: 60px;
+    scroll-margin-top: 50px;
 }

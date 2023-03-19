@@ -3,18 +3,19 @@ import './style.css'
 import SocialLink from "../sotialLink/SocialLink";
 
 function Navbar(props) {
-    const menuRef=useRef(null)
-    const triggerMenuRef=useRef(null)
-    const menuIcon=useRef(null)
-    const [isOpenMenu,setIsOpenMenu]=useState(false)
-    function handleMenu(){
+    const menuRef = useRef(null)
+    const triggerMenuRef = useRef(null)
+    const menuIcon = useRef(null)
+    const [isOpenMenu, setIsOpenMenu] = useState(false)
+
+    function handleMenu(event) {
+        event.preventDefault()
         if (isOpenMenu) {
             menuIcon.current.className = ''
             menuIcon.current.classList.add('fa-solid', 'fa-bars')
             menuRef.current.classList.remove('menu-active')
             setIsOpenMenu(!isOpenMenu)
-        }
-        else {
+        } else {
             menuIcon.current.className = ''
             menuIcon.current.classList.add('fa-sharp', 'fa-solid', 'fa-xmark')
             menuRef.current.classList.add('menu-active')
@@ -22,19 +23,25 @@ function Navbar(props) {
         }
     }
 
+    function handleOnClickMenuItem(event) {
+        event.preventDefault()
+        document.querySelector(event.currentTarget.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+        })
+    }
 
     return (
         <header>
             <div className="top-menu" ref={menuRef}>
                 <ul>
                     <li>
-                        <SocialLink>Home</SocialLink>
+                        <SocialLink linkTo='#home'>Home</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>About</SocialLink>
+                        <SocialLink linkTo='#about'>About</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Skills</SocialLink>
+                        <SocialLink linkTo='#skills' onClick={handleOnClickMenuItem}>Skills</SocialLink>
                     </li>
                     <li>
                         <SocialLink>Experience</SocialLink>
@@ -61,7 +68,8 @@ function Navbar(props) {
                         <SocialLink>Contact Me</SocialLink>
                     </li>
                 </ul>
-                <a href="#" className="menu-btn" ref={triggerMenuRef} onClick={handleMenu}><i ref={menuIcon} className="fa-solid fa-bars"></i></a>
+                <a href="#" className="menu-btn" ref={triggerMenuRef} onClick={handleMenu}><i ref={menuIcon}
+                                                                                              className="fa-solid fa-bars"></i></a>
             </div>
         </header>
     );

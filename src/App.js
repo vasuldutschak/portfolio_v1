@@ -13,6 +13,7 @@ import BlogSection from "./components/sections/blog/BlogSection";
 import TextSection from "./components/sections/text/TextSection";
 import ContactSection from "./components/sections/contact/ContactSection";
 import Navbar from "./components/navbar/Navbar";
+import PortfolioSection from "./components/sections/portfolio/PortfolioSection";
 function App() {
     return (
         <div className="App">
@@ -27,6 +28,7 @@ function App() {
                 <ClientsSection/>
                 <PricingSection/>
                 <BlogSection/>
+                <PortfolioSection/>
                 <TextSection/>
                 <ContactSection/>
             </Container>
