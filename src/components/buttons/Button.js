@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import './style.css'
-function Button({blue,onClick,children,...otherProps}) {
+function Button({blue,onClick,children,linkTo,...otherProps}) {
     const linkRef = useRef(null)
     function handleMouseEnter(event){
         const ink = event.target.querySelector('.ink')

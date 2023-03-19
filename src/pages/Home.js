@@ -11,11 +11,13 @@ import PortfolioSection from "../components/sections/portfolio/PortfolioSection"
 import TextSection from "../components/sections/text/TextSection";
 import ContactSection from "../components/sections/contact/ContactSection";
 import Container from "../components/container/Container";
+import UserDescriptionSection from "../components/sections/aboutUserSection/UserDescriptionSection";
 
 function Home(props) {
     return (
         <Container>
             <AboutUserSection/>
+            <UserDescriptionSection/>
             <SkillsSection/>
             <ExperienceSection/>
             <ServicesSection/>
