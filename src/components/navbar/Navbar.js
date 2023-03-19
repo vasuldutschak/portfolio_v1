@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useCallback, useRef, useState} from 'react';
 import './style.css'
 import SocialLink from "../sotialLink/SocialLink";
 
@@ -23,49 +23,49 @@ function Navbar(props) {
         }
     }
 
-    function handleOnClickMenuItem(event) {
+    const handleOnClickMenuItem = useCallback((event) => {
         event.preventDefault()
         document.querySelector(event.currentTarget.getAttribute('href')).scrollIntoView({
             behavior: 'smooth',
         })
-    }
+    }, [menuIcon])
 
     return (
         <header>
             <div className="top-menu" ref={menuRef}>
                 <ul>
                     <li>
-                        <SocialLink linkTo='#home'>Home</SocialLink>
+                        <SocialLink linkTo='#home' onClick={handleOnClickMenuItem}>Home</SocialLink>
                     </li>
                     <li>
-                        <SocialLink linkTo='#about'>About</SocialLink>
+                        <SocialLink linkTo='#about' onClick={handleOnClickMenuItem}>About</SocialLink>
                     </li>
                     <li>
                         <SocialLink linkTo='#skills' onClick={handleOnClickMenuItem}>Skills</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Experience</SocialLink>
+                        <SocialLink linkTo='#experience' onClick={handleOnClickMenuItem}>Experience</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Services</SocialLink>
+                        <SocialLink linkTo='#services' onClick={handleOnClickMenuItem}>Services</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Education</SocialLink>
+                        <SocialLink linkTo='#education' onClick={handleOnClickMenuItem}>Education</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Portfolio</SocialLink>
+                        <SocialLink linkTo='#portfolio' onClick={handleOnClickMenuItem}>Portfolio</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Clients</SocialLink>
+                        <SocialLink linkTo='#clients' onClick={handleOnClickMenuItem}>Clients</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Pricing</SocialLink>
+                        <SocialLink linkTo='#pricing' onClick={handleOnClickMenuItem}>Pricing</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Blog</SocialLink>
+                        <SocialLink linkTo='#blog' onClick={handleOnClickMenuItem}>Blog</SocialLink>
                     </li>
                     <li>
-                        <SocialLink>Contact Me</SocialLink>
+                        <SocialLink linkTo='#contact' onClick={handleOnClickMenuItem}>Contact Me</SocialLink>
                     </li>
                 </ul>
                 <a href="#" className="menu-btn" ref={triggerMenuRef} onClick={handleMenu}><i ref={menuIcon}

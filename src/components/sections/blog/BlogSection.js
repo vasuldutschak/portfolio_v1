@@ -8,7 +8,7 @@ import img2 from '../../../blog2.jpg'
 function BlogSection(props) {
     const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel...'
     return (
-        <section className='blog'>
+        <section className='blog' id='blog'>
             <div className="blog__container">
                 <div className='section-title'>Blog</div>
                 <div className="blog-card-container">

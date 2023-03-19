@@ -5,7 +5,7 @@ function EducationSection(props) {
     const text = 'Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Lorem ipsum dolor sit amet, in quodsi.'
 
     return (
-        <section className='education'>
+        <section className='education' id='education'>
             <div className="education__container">
                 <div className='section-title'>Education</div>
                 <div className="experience-timeline row">

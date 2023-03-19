@@ -5,7 +5,7 @@ import Card from "../../card/Card";
 function ServicesSection(props) {
     const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt. In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel. Vestibulum venenatis vestibulum elit ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     return (
-        <section className='services'>
+        <section className='services' id='services'>
             <div className="services__container">
                 <div className='section-title'>Services</div>
                 <div className="service-card__container">

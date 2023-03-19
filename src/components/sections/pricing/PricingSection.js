@@ -4,7 +4,7 @@ import PricingCard from "../../pricingCard/PricingCard";
 
 function PricingSection(props) {
     return (
-        <section className='pricing'>
+        <section className='pricing' id='pricing'>
             <div className="pricing__container">
                 <div className='section-title'>Pricing</div>
                 <div className="pricing-card-container">

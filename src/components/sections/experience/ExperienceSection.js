@@ -5,7 +5,7 @@ import ExperienceCard from "../../experienceCard/ExperienceCard";
 function ExperienceSection(props) {
     const text = 'Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Lorem ipsum dolor sit amet, in quodsi.'
     return (
-        <section className='experience'>
+        <section className='experience' id='experience'>
             <div className="experience__container">
                 <div className='section-title'>Experience</div>
                 <div className="experience-timeline row">

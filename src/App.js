@@ -16,7 +16,7 @@ import Navbar from "./components/navbar/Navbar";
 import PortfolioSection from "./components/sections/portfolio/PortfolioSection";
 function App() {
     return (
-        <div className="App">
+        <div className="App" id='home'>
             <Navbar/>
             <HeaderBackGround/>
             <Container>

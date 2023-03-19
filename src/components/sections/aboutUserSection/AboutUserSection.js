@@ -6,7 +6,7 @@ import UserInfoItem from "../../userInfoItem/UserInfoItem";
 import Button from "../../buttons/Button";
 
 function AboutUserSection(props) {
-    return (<section className='about-me'>
+    return (<section className='about-me' id='about'>
         <div className="about-me__container">
             <div className="user-container">
                 <div className='image-container'>

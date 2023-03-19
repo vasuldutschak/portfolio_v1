@@ -7,7 +7,7 @@ import img from '../../../rev3.jpg'
 function ClientsSection(props) {
     const text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet culpa et eum laudantium necessitatibus nemo nesciunt numquam officia repellendus reprehenderit?'
 
-    return (<section className='clients'>
+    return (<section className='clients' id='clients'>
         <div className="clients__container">
             <div className='section-title'>Clients</div>
             <div className="slider-container">

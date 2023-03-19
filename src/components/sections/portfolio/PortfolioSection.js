@@ -21,7 +21,7 @@ function PortfolioSection(props) {
     }
 
     return (
-        <section className='portfolio'>
+        <section className='portfolio' id='portfolio'>
             <div className="portfolio__container">
                 <div className='section-title'>Portfolio</div>
                 <div className="portfolio-navbar">

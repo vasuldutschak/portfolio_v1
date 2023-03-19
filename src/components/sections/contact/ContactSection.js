@@ -5,7 +5,7 @@ import Button from "../../buttons/Button";
 
 function ContactSection(props) {
     return (
-        <section className='contact'>
+        <section className='contact' id='contact'>
             <div className="contact__container">
                 <div className='section-title'>Contact</div>
                 <div className="contact-card-container">
