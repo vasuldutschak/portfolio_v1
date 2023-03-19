@@ -11,10 +11,7 @@ function Navbar(props) {
     function handleMenu(event) {
         event.preventDefault()
         if (isOpenMenu) {
-            menuIcon.current.className = ''
-            menuIcon.current.classList.add('fa-solid', 'fa-bars')
-            menuRef.current.classList.remove('menu-active')
-            setIsOpenMenu(!isOpenMenu)
+            closeMenu(event)
         } else {
             menuIcon.current.className = ''
             menuIcon.current.classList.add('fa-sharp', 'fa-solid', 'fa-xmark')
@@ -23,11 +20,19 @@ function Navbar(props) {
         }
     }
 
+    function closeMenu(event){
+        menuIcon.current.className = ''
+        menuIcon.current.classList.add('fa-solid', 'fa-bars')
+        menuRef.current.classList.remove('menu-active')
+        setIsOpenMenu(false)
+    }
+
     const handleOnClickMenuItem = useCallback((event) => {
         event.preventDefault()
         document.querySelector(event.currentTarget.getAttribute('href')).scrollIntoView({
             behavior: 'smooth',
         })
+        closeMenu(event)
     }, [menuIcon])
 
     return (
