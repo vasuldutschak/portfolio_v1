@@ -1,0 +1,116 @@
+.blog-item-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.blog-title {
+    font-size: 26px;
+    line-height: 24px;
+    margin: 12px 0;
+    color: var(--item-title-color);
+    font-weight: bold;
+}
+
+.blog-posted-date {
+    font-size: 13px;
+    color: var(--color-posted-text);
+    margin-bottom: 30px;
+}
+
+.blog-image-container {
+    width: 100%;
+}
+.blog-image-container img{
+    width: 100%;
+}
+.blog-text {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: var(--input-color);
+}
+
+.blog-text-border-left {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--blog-text-border-left);
+    border-left: 4px solid var(--blog-text-border-left);
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+.blog-text-list ul {
+    padding: 30px;
+    line-height: 24px;
+}
+.blog-text-list ul li{
+    font-size: 14px;
+    list-style: circle;
+}
+
+.blog-gallery-container {
+    display: grid;
+    grid-template: repeat(1,1fr)/repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.blog-comments,.blog-comments-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.blog-comment-tile {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 25px 0 30px 0;
+    color: var(--blog-text-border-left);
+    font-weight: bold;
+}
+
+.blog-comments-container {
+}
+
+.comment {
+    display: flex;
+    column-gap: 20px;
+}
+
+.comment-image-container {
+    width: 100px;
+    height: 100px;
+}
+.comment-image-container img{
+    width: inherit;
+}
+
+.comment-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-userinfo {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.comment-published-date {
+    font-size: 12px;
+    color: var(--comment-published-color);
+}
+
+.comment-text {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+@media (max-width: 720px) {
+    .blog-gallery-container{
+        grid-template: repeat(1,1fr)/repeat(2,1fr);
+    }
+}

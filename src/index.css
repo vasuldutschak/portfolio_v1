@@ -22,6 +22,9 @@ a{
     --input-color:#868686;
     --item-active:#263fcc;
     --border-item:#abb8fe;
+    --color-posted-text:#b9b9b9;
+    --blog-text-border-left:#000;
+    --comment-published-color:#c5c5c5;
 }
 body{
     background: var(--bg-body);
