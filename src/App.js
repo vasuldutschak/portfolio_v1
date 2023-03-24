@@ -8,10 +8,10 @@ import BlogItem from "./components/sections/blogItem/BlogItem";
 function App() {
     return (
         <Routes>
-            <Route path='/portfolio_v1' element={<HomeLayout/>}/>
-            <Route path='/portfolio_v1/blog' element={<BlogLayout/>}>
-                <Route path='/portfolio_v1/blog' element={<Blog/>}/>
-                <Route path='/portfolio_v1/blog/:id' element={<BlogItem/>}/>
+            <Route path='/' element={<HomeLayout/>}/>
+            <Route path='/blog' element={<BlogLayout/>}>
+                <Route path='/blog' element={<Blog/>}/>
+                <Route path='/blog/:id' element={<BlogItem/>}/>
             </Route>
             <Route path='*' element={<h1>Page Not found</h1>}/>
         </Routes>
