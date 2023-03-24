@@ -17,6 +17,7 @@
     flex-direction: column;
     position: relative;
     transition: all .6s;
+    opacity: 0;
 }
 .blog-card-image{
     overflow: hidden;

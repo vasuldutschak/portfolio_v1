@@ -18,7 +18,7 @@ function Modal({children,onClose}) {
     return createPortal(
         <div className={styles.overlay} onClick={closeModal}>
             <div className={styles.modal}>
-                <span className={styles.close} onClick={closeModal}>X</span>
+                <div className={styles.close}><i className="fa-sharp fa-solid fa-xmark" onClick={closeModal}></i></div>
                 {children}
             </div>
         </div>, modalRoot

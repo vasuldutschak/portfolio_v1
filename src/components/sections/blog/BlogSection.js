@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './style.css'
 import BlogCard from "./BlogCard";
 import Button from "../../buttons/Button";

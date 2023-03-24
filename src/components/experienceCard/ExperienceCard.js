@@ -1,11 +1,32 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './style.css'
 function ExperienceCard({text,title,position,date,reversed}) {
+    const options = {
+        root: document.querySelector('.skills'),
+        rootMargin: '0px',
+        threshold: .5,
+    }
+    const targetToObserve = useRef(null)
+
+    function initAnimation() {
+        targetToObserve.current.classList.add(reversed ? 'bounce-in-left' : 'bounce-in-right')
+    }
     const getClassNames=()=>{
         return `experience-card-container row ${reversed ? 'reversed': ''}`
     }
+    useEffect(()=>{
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) initAnimation()
+            })
+        }, options)
+        observer.observe(targetToObserve.current)
+        return ()=>{
+            observer.unobserve(targetToObserve.current)
+        }
+    },[])
     return (
-        <div className={getClassNames()}>
+        <div className={getClassNames()} ref={targetToObserve}>
             <div className="col fb-50">
                 <div className="experience-card">
                     <div className='experience-card-title'>{title}</div>

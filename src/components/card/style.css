@@ -6,6 +6,9 @@
     flex-direction: column;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
+.service-card__container > .card{
+    opacity: 0;
+}
 .card-icon,.card-image{
     position: absolute;
     top: 0;

@@ -1,14 +1,36 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './style.css'
 import Card from "../../card/Card";
 import SkillsItem from "../../skillsItem/SkillsItem";
 
 function SkillsSection(props) {
+    const options = {
+        root: document.querySelector('.skills'),
+        rootMargin: '0px',
+        threshold: .5,
+    }
+    const targetToObserve = useRef(null)
+
+    function initAnimation() {
+        targetToObserve.current.classList.add('slide-in-fwd-bottom')
+    }
+
+    useEffect(()=>{
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) initAnimation()
+            })
+        }, options)
+        observer.observe(targetToObserve.current)
+        return ()=>{
+            observer.unobserve(targetToObserve.current)
+        }
+    },[])
     return (
         <section className='skills' id='skills'>
             <div className="skills__container">
                 <div className='section-title'>Skills</div>
-                <div className="row">
+                <div className="row" ref={targetToObserve}>
                     <div className="col fb-50">
                         <Card title='Professional' icon='fa-solid fa-gear'>
                             <div className="skills-item__container">

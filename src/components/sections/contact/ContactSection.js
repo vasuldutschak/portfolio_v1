@@ -1,14 +1,35 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './style.css'
 import UserInfoItem from "../../userInfoItem/UserInfoItem";
 import Button from "../../buttons/Button";
 
 function ContactSection(props) {
+    const options = {
+        root: document.querySelector('.contact'),
+        rootMargin: '0px',
+        threshold: .5,
+    }
+    const targetToObserve = useRef(null)
+
+    function initAnimation() {
+        targetToObserve.current.classList.add('slide-in-fwd-center')
+    }
+    useEffect(()=>{
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) initAnimation()
+            })
+        }, options)
+        observer.observe(targetToObserve.current)
+        return ()=>{
+            observer.unobserve(targetToObserve.current)
+        }
+    },[])
     return (
         <section className='contact' id='contact'>
             <div className="contact__container">
                 <div className='section-title'>Contact</div>
-                <div className="contact-card-container">
+                <div className="contact-card-container" ref={targetToObserve}>
                     <div className='card'>
                         <div className="info-list">
                             <ul>
