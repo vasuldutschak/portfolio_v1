@@ -17,6 +17,8 @@
     flex-direction: column;
     position: relative;
     transition: all .6s;
+}
+.blog-card{
     opacity: 0;
 }
 .blog-card-image{

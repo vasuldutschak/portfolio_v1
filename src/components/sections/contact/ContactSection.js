@@ -21,9 +21,6 @@ function ContactSection(props) {
             })
         }, options)
         observer.observe(targetToObserve.current)
-        return ()=>{
-            observer.unobserve(targetToObserve.current)
-        }
     },[])
     return (
         <section className='contact' id='contact'>

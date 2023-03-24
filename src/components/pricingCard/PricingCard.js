@@ -21,9 +21,6 @@ function PricingCard({icon,title,amount,children}) {
             })
         }, options)
         observer.observe(targetToObserve.current)
-        return ()=>{
-            observer.unobserve(targetToObserve.current)
-        }
     },[])
     return (
         <div className='pricing-card card' ref={targetToObserve}>

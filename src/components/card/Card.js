@@ -21,9 +21,6 @@ function Card({children,icon,title,cssClasses}) {
             })
         }, options)
         observer.observe(targetToObserve.current)
-        return ()=>{
-            observer.unobserve(targetToObserve.current)
-        }
     },[])
     return (
         <div className={getCssClasses()} ref={targetToObserve}>

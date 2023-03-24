@@ -19,9 +19,6 @@ function BlogCard({img,hasTags,date,title,text,btnDisable ,onClick}) {
             })
         }, options)
         observer.observe(targetToObserve.current)
-        return ()=>{
-            observer.unobserve(targetToObserve.current)
-        }
     },[])
     return (
         <div className='blog-card card' onClick={onClick} ref={targetToObserve}>

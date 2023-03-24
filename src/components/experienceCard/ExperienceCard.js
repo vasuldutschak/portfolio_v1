@@ -21,9 +21,6 @@ function ExperienceCard({text,title,position,date,reversed}) {
             })
         }, options)
         observer.observe(targetToObserve.current)
-        return ()=>{
-            observer.unobserve(targetToObserve.current)
-        }
     },[])
     return (
         <div className={getClassNames()} ref={targetToObserve}>
